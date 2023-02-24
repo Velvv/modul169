@@ -1,2 +1,13 @@
-docker pull nginx
-docker run --name docker-nginx -p 80:80 -d -v ~/docker-nginx/html:/usr/share/nginx/html nginx
+# Use an official Ubuntu runtime as a parent image
+FROM ubuntu:latest
+
+# Update Ubuntu package index
+RUN apt-get update
+
+# Install Nginx
+RUN apt-get install -y nginx
+
+# Expose port 80 for web traffic
+EXPOSE 80
+
+RUN docker run --name docker-nginx -p 80:80 -d -v ~/docker-nginx/html:/usr/share/nginx/html nginx
