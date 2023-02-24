@@ -1,3 +1,3 @@
 FROM scratch
-RUN sudo mkdir -p ~/docker-nginx/html
-RUN sudo cp index.html ~/docker-nginx/html
+RUN sudo mkdir /home/velvv/docker-nginx/html
+RUN sudo cp index.html /home/velvv/docker-nginx/html
