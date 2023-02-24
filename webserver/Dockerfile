@@ -1,6 +1,3 @@
-# Use an official Ubuntu runtime as a parent image
-FROM ubuntu:latest
-
 # Update Ubuntu package index
 RUN apt-get update
 
