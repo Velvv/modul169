@@ -4,5 +4,3 @@ services:
     build: ./web-frontend
   webserver:
     build: ./webserver
-    depends-on:
-      - ./web.frontend
