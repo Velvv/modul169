@@ -1,2 +1,2 @@
-RUN mkdir -p ~/docker-nginx/html
-RUN cp index.html ~/docker-nginx/html
+RUN sudo mkdir -p ~/docker-nginx/html
+RUN sudo cp index.html ~/docker-nginx/html
