@@ -1,3 +1,5 @@
+FROM scratch
+
 # Update Ubuntu package index
 RUN apt-get update
 
