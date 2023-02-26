@@ -8,3 +8,4 @@ services:
     volumes:
       - ./index.html:/usr/share/nginx/html/index.html
     container_name: nginx-server
+    
